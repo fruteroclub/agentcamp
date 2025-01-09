@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Section } from "../layout/section"
+import Link from "next/link"
 
 export function HeroSection() {
   return (
@@ -15,9 +16,11 @@ export function HeroSection() {
       </div>
 
       <div className="flex flex-col sm:flex-row justify-center gap-4">
-        <Button size="lg" className="text-lg px-8">
-          Inscríbete Ahora
-        </Button>
+        <Link href="https://lu.ma/6rl9wlja" target="_blank" rel="noopener noreferrer">
+          <Button size="lg" className="text-lg px-8">
+            ¡Inscríbete hoy!
+          </Button>
+        </Link>
       </div>
       <div className="space-y-8">
         <p className="text-secondary text-xl font-medium">

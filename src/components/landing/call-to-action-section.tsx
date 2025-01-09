@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Section } from "../layout/section"
 import { ArrowRight } from "lucide-react"
+import Link from "next/link"
 
 export function CallToActionSection() {
   return (
@@ -17,10 +18,12 @@ export function CallToActionSection() {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="lg" className="text-lg px-8 group">
-            Inscríbete Ahora
-            <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-          </Button>
+          <Link href="https://lu.ma/6rl9wlja" target="_blank" rel="noopener noreferrer">
+            <Button size="lg" className="text-lg px-8 group">
+              Inscríbete Ahora
+              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </Link>
         </div>
 
         <div className="space-y-2 pt-4">

@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Section } from "../layout/section"
 import { CheckCircle } from "lucide-react"
 import { Button } from "../ui/button"
+import Link from "next/link"
 
 export function PricingSection() {
   const features = [
@@ -45,7 +46,8 @@ export function PricingSection() {
               </div>
 
               <div className="pt-8 flex justify-center">
-                <Button>¡Inscríbete ya!</Button></div>
+                <Link href="https://lu.ma/6rl9wlja" target="_blank" rel="noopener noreferrer">
+                  <Button>¡Inscríbete ya!</Button></Link></div>
             </div>
           </CardContent>
         </Card>
