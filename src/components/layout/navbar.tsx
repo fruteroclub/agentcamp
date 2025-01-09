@@ -17,7 +17,7 @@ export type MenuItemType = {
 const MENU_ITEMS: MenuItemType[] = [
   {
     displayText: 'programa',
-    href: '/programa',
+    href: '/#programa',
     isMobileOnly: false,
   },
   {

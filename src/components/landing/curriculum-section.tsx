@@ -36,7 +36,7 @@ export function CurriculumSection() {
   ]
 
   return (
-    <Section className="bg-muted/50">
+    <Section id="programa" className="bg-muted/50">
       <div className="text-center space-y-4 mb-12">
         <h2 className="text-3xl md:text-4xl font-bold">
           Curriculum
