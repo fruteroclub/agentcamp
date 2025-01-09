@@ -14,6 +14,11 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'euc.li',
       },
+      
+      {
+        protocol: 'https',
+        hostname: 'media.licdn.com',
+      },
     ],
   },
 };

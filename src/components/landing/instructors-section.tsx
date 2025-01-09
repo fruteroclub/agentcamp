@@ -5,18 +5,18 @@ import { Section } from "../layout/section"
 export function InstructorsSection() {
   const instructors = [
     {
-      name: "Ana García",
-      role: "AI Research Lead",
-      company: "OpenAI",
-      image: "/team/ana.jpg",
-      bio: "Experta en LLMs y desarrollo de agentes inteligentes"
+      name: "Frida Ruh",
+      role: "Especialista IA",
+      company: "AI The New Sexy | Wavy Node",
+      image: "https://media.licdn.com/dms/image/v2/D4D03AQEyFQtj1zzENw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724877818200?e=1741824000&v=beta&t=rh3FvOaTS2-JYgzWAZuai22ybsOBwOiskg071yMda80",
+      bio: "Experta en LLMs, datos y desarrollo de soluciones IA"
     },
     {
-      name: "Carlos Ruiz",
-      role: "Tech Lead",
-      company: "Anthropic",
-      image: "/team/carlos.jpg",
-      bio: "Especialista en arquitectura de sistemas AI"
+      name: "mel troopdegen",
+      role: "Onchain Builder | DevRel",
+      company: "Dabl Club | $REGEN",
+      image: "https://media.licdn.com/dms/image/v2/D4D03AQEPXFbyrHCFCg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1711748933909?e=1741824000&v=beta&t=PyxegvtfFZhUaxxci78AIZKgUljLSJfO9J38A2BSzSc",
+      bio: "Ing. Biomédico convertido en desarrollador de soluciones Onchain + IA"
     }
   ]
 
@@ -35,15 +35,17 @@ export function InstructorsSection() {
         {instructors.map((instructor) => (
           <Card key={instructor.name}>
             <CardContent className="pt-6">
-              <div className="flex gap-6">
-                <Image
-                  src={instructor.image}
-                  alt={instructor.name}
-                  width={80}
-                  height={80}
-                  className="rounded-full"
-                />
-                <div>
+              <div className="flex gap-2 grid grid-cols-3">
+                <div className="col-span-1 flex items-center justify-center md:px-2 lg:px-4">
+                  <Image
+                    src={instructor.image}
+                    alt={instructor.name}
+                    width={80}
+                    height={80}
+                    className="rounded-full aspect-square w-full"
+                  />
+                </div>
+                <div className="col-span-2 space-y-2">
                   <h3 className="font-semibold text-lg">{instructor.name}</h3>
                   <p className="text-primary">
                     {instructor.role} @ {instructor.company}
