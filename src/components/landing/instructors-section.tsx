@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Section } from "../layout/section"
 
@@ -6,18 +5,25 @@ export function InstructorsSection() {
   const instructors = [
     {
       name: "Frida Ruh",
-      role: "Especialista IA",
+      role: "Especialista IA | Founder",
       company: "AI The New Sexy | Wavy Node",
-      image: "https://media.licdn.com/dms/image/v2/D4D03AQEyFQtj1zzENw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724877818200?e=1741824000&v=beta&t=rh3FvOaTS2-JYgzWAZuai22ybsOBwOiskg071yMda80",
+      image: "/images/avatars/instructors/frida-instructor.jpg",
       bio: "Experta en LLMs, datos y desarrollo de soluciones IA"
+    },
+    {
+      name: "Guty",
+      role: "AI Agent enthusiastic | DevRel",
+      company: "Odisea Labs",
+      image: "/images/avatars/instructors/guty-instructor.png",
+      bio: "Founder serial, ganador Startup Chile, ganador múltiples hackathons"
     },
     {
       name: "mel troopdegen",
       role: "Onchain Builder | DevRel",
       company: "Dabl Club | $REGEN",
-      image: "https://media.licdn.com/dms/image/v2/D4D03AQEPXFbyrHCFCg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1711748933909?e=1741824000&v=beta&t=PyxegvtfFZhUaxxci78AIZKgUljLSJfO9J38A2BSzSc",
+      image: "/images/avatars/instructors/mel-instructor.jpg",
       bio: "Ing. Biomédico convertido en desarrollador de soluciones Onchain + IA"
-    }
+    },
   ]
 
   return (
@@ -37,7 +43,7 @@ export function InstructorsSection() {
             <CardContent className="pt-6">
               <div className="flex gap-2 grid grid-cols-3">
                 <div className="col-span-1 flex items-center justify-center md:px-2 lg:px-4">
-                  <Image
+                  <img
                     src={instructor.image}
                     alt={instructor.name}
                     width={80}
