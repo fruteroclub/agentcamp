@@ -16,19 +16,17 @@ export type MenuItemType = {
 
 const MENU_ITEMS: MenuItemType[] = [
   {
-    displayText: 'bounties',
-    href: 'https://ethglobal.com/events/bangkok/prizes#polygon',
-    isExternal: true,
+    displayText: 'frutas',
+    href: '/leaderboard',
     isMobileOnly: false,
   },
   {
-    displayText: 'repo',
-    href: 'https://github.com/Dablclub/hackathon-starter',
-    isExternal: true,
+    displayText: 'proyectos',
+    href: '/proyectos',
     isMobileOnly: false,
   },
   { displayText: 'faq', href: '/faq', isMobileOnly: false },
-  { displayText: 'account', href: '/account', isMobileOnly: false },
+  // { displayText: 'account', href: '/account', isMobileOnly: false },
 ]
 
 export default function Navbar() {
@@ -38,15 +36,15 @@ export default function Navbar() {
     <header className="top-0 h-20 w-full bg-secondary">
       <div className="mx-auto flex h-full w-full max-w-3xl items-center justify-between p-4 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-5 lg:px-8">
         <div className="relative">
-          <Link className="flex w-24 items-center" href="/">
+          <Link className="flex items-center" href="/">
             <Image
-              src="/images/logos/dabl-club-logo-white.png"
-              alt="Dabl Club logo"
+              src="/images/logos/kukulcan-logo-color.png"
+              alt="kukulcán: co-founder of Frutero Club"
               width={128}
               height={128}
-              className="w-20 transition duration-300 ease-in-out hover:scale-90"
+              className="w-14 lg:w-14 transition duration-500 ease-in-out hover:rotate-[-25deg]"
             />
-            <span className="sr-only">Dabl Club</span>
+            <span className="sr-only">Frutero Club</span>
           </Link>
         </div>
         <div className="z-10 col-span-3 flex items-center justify-center">

@@ -17,11 +17,13 @@ const PageWithAppbar: React.FC<NavbarProps & { children: React.ReactNode }> = ({
     <>
       <Navbar />
       <main
-        className={`min-h-[calc(100vh-64px)] top-[${NAVBAR_HEIGHT}] flex w-full flex-col items-center overflow-x-hidden`}
+        className={`relative min-h-[calc(100vh-64px)] top-[${NAVBAR_HEIGHT}] flex w-full flex-col items-center overflow-x-hidden overflow-y-scroll`}
       >
         {children}
+        <div className="absolute bottom-0 w-full">
+          <Footer />
+        </div>
       </main>
-      <Footer />
     </>
   )
 }

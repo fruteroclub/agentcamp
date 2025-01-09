@@ -6,21 +6,17 @@ export default function Home() {
   return (
     <PageWithAppbar>
       <div className="page space-y-8 text-center">
-        <h1>Polygon Hackathon Starter</h1>
+        <h1>Frutero Hackathon Starter</h1>
         <h3>
-          get a head start on your hack with
-          <br />
-          <Link href="https://ethglobal.com/events/bangkok/prizes#polygon">
-            Polygon
-          </Link>{' '}
-          and{' '}
-          <Link href="https://ethglobal.com/events/bangkok/prizes#dynamic">
-            Dynamic.xyz
-          </Link>
+          construye tu proyecto rápido y fácil <br />con las frutas
         </h3>
-        <Link href="https://learn.dabl.club" target="_blank">
-          <Button size="lg">check the tutorial!</Button>
+        <Link href="https://www.youtube.com/@fruteroclub" target="_blank">
+          <Button size="lg">¡aprende aquí!</Button>
         </Link>
+        <div className="flex justify-center">
+          <h3>
+            🍑🥝🍇🥑🍎🍓🍍🥭</h3>
+        </div>
       </div>
     </PageWithAppbar>
   )

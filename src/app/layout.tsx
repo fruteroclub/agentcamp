@@ -13,8 +13,8 @@ const fontSans = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Polygon Hackathon Starter by Dabl Club',
-  description: 'Get a head start on your hack with Polygon',
+  title: 'Hackathon Starter por Frutero Club',
+  description: 'Construye tu proyecto rápido y fácil con Frutero Club',
   icons: [{ rel: 'icon', url: '/favicon.ico' }],
 }
 
@@ -25,7 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          'min-h-screen bg-background font-sans antialiased',
+          'min-h-screen bg-background font-sans antialiased overflow-hidden',
           fontSans.variable,
         )}
       >
