@@ -38,17 +38,17 @@ export default function MobileMenu({ menuItems, pathname }: MobileMenuProps) {
           {menuItems?.map((menuItem, index) => (
             <Link
               key={`${menuItem.displayText}-menuItem-${index}`}
-              className={`inline-flex items-center justify-center px-4 py-2 text-lg font-medium text-secondary transition-colors hover:text-primary focus:text-primary focus:outline-none ${
-                pathname === menuItem.href &&
+              className={`inline-flex items-center justify-center px-4 py-2 text-lg font-medium text-secondary transition-colors hover:text-primary focus:text-primary focus:outline-none ${pathname === menuItem.href &&
                 'pointer-events-none underline decoration-primary decoration-[1.5px] underline-offset-[6px] hover:!text-secondary'
-              }`}
+                }`}
               href={menuItem.href}
             >
               {menuItem.displayText}
             </Link>
           ))}
           <div className="flex justify-center py-2">
-            <AuthButton setIsMenuOpen={setIsMenuOpen} />
+            <AuthButton />
+            {/* <AuthButton setIsMenuOpen={setIsMenuOpen} /> */}
           </div>
         </div>
       </SheetContent>
