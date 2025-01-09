@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
@@ -16,16 +15,16 @@ export type MenuItemType = {
 
 const MENU_ITEMS: MenuItemType[] = [
   {
-    displayText: 'frutas',
-    href: '/leaderboard',
+    displayText: 'programa',
+    href: '/programa',
     isMobileOnly: false,
   },
   {
-    displayText: 'proyectos',
-    href: '/proyectos',
+    displayText: 'recursos',
+    href: '/recursos',
     isMobileOnly: false,
   },
-  { displayText: 'faq', href: '/faq', isMobileOnly: false },
+  { displayText: 'faq', href: '/#faq', isMobileOnly: false },
   // { displayText: 'account', href: '/account', isMobileOnly: false },
 ]
 
@@ -34,43 +33,41 @@ export default function Navbar() {
 
   return (
     <header className="top-0 h-20 w-full bg-secondary">
-      <div className="mx-auto flex h-full w-full max-w-3xl items-center justify-between p-4 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-5 lg:px-8">
-        <div className="relative">
-          <Link className="flex items-center" href="/">
-            <Image
-              src="/images/logos/kukulcan-logo-color.png"
-              alt="kukulcán: co-founder of Frutero Club"
-              width={128}
-              height={128}
-              className="w-14 lg:w-14 transition duration-500 ease-in-out hover:rotate-[-25deg]"
-            />
-            <span className="sr-only">Frutero Club</span>
+      <div className="mx-auto flex h-full w-full max-w-3xl items-center justify-between px-4 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-5 lg:px-8">
+        <div className="lg:col-span-1">
+          <Link className="flex items-center text-3xl" href="/">
+            <span className="text-3xl transition duration-300 ease-in-out hover:scale-125">🤖</span>
+            <span className="sr-only">Agentcamp</span>
           </Link>
         </div>
-        <div className="z-10 col-span-3 flex items-center justify-center">
-          <nav className="hidden gap-6 lg:flex">
-            {MENU_ITEMS.filter((menuItem) => !menuItem.isMobileOnly).map(
-              (menuItem, index) => (
-                <Link
-                  key={`${menuItem.displayText}-menuItem-${index}`}
-                  className={`inline-flex items-center justify-center px-4 py-2 text-lg font-medium text-secondary-foreground transition-colors hover:text-primary focus:text-primary focus:outline-none ${
-                    pathname === menuItem.href &&
-                    'pointer-events-none underline decoration-primary decoration-[1.5px] underline-offset-[6px] hover:!text-foreground'
-                  }`}
-                  href={menuItem.href}
-                  target={menuItem.isExternal ? '_blank' : ''}
-                >
-                  {menuItem.displayText}
-                </Link>
-              ),
-            )}
-          </nav>
+        <div className="lg:col-span-3">
+          <div className="z-10 col-span-3 flex items-center justify-center">
+            <nav className="hidden gap-6 lg:flex">
+              {MENU_ITEMS.filter((menuItem) => !menuItem.isMobileOnly).map(
+                (menuItem, index) => (
+                  <Link
+                    key={`${menuItem.displayText}-menuItem-${index}`}
+                    className={`inline-flex items-center justify-center px-4 py-2 text-lg font-medium text-secondary-foreground transition-colors hover:text-primary focus:text-primary focus:outline-none ${pathname === menuItem.href &&
+                      'pointer-events-none underline decoration-primary decoration-[1.5px] underline-offset-[6px] hover:!text-foreground'
+                      }`}
+                    href={menuItem.href}
+                    target={menuItem.isExternal ? '_blank' : ''}
+                  >
+                    {menuItem.displayText}
+                  </Link>
+                ),
+              )}
+            </nav>
+          </div>
         </div>
-        <div className="hidden lg:flex lg:justify-end">
-          <AuthButton />
-        </div>
-        <MobileMenu menuItems={MENU_ITEMS} pathname={pathname} />
+        <div className="lg:col-span-1">
+          <div className="hidden lg:flex lg:justify-end">
+            <AuthButton />
+          </div>
+
+          <MobileMenu menuItems={MENU_ITEMS} pathname={pathname} />
+        </div >
       </div>
-    </header>
+    </header >
   )
 }

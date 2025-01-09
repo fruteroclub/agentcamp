@@ -1,23 +1,24 @@
-import PageWithAppbar from '@/components/layout/pageWithAppbar'
-import { Button } from '@/components/ui/button'
-import Link from 'next/link'
+import { BenefitsSection } from "@/components/landing/benefits-section"
+import { CurriculumSection } from "@/components/landing/curriculum-section"
+import { FAQSection } from "@/components/landing/faq-section"
+import { HeroSection } from "@/components/landing/hero-section"
+import { InstructorsSection } from "@/components/landing/instructors-section"
+import { PartnersSection } from "@/components/landing/partners-section"
+import { PrizesSection } from "@/components/landing/prizes-section"
+import { ProgramOverviewSection } from "@/components/landing/program-overview-section"
+import PageWithAppbar from "@/components/layout/pageWithAppbar"
 
 export default function Home() {
   return (
     <PageWithAppbar>
-      <div className="page space-y-8 text-center">
-        <h1>Frutero Hackathon Starter</h1>
-        <h3>
-          construye tu proyecto rápido y fácil <br />con las frutas
-        </h3>
-        <Link href="https://www.youtube.com/@fruteroclub" target="_blank">
-          <Button size="lg">¡aprende aquí!</Button>
-        </Link>
-        <div className="flex justify-center">
-          <h3>
-            🍑🥝🍇🥑🍎🍓🍍🥭</h3>
-        </div>
-      </div>
+      <HeroSection />
+      <ProgramOverviewSection />
+      <CurriculumSection />
+      <BenefitsSection />
+      <PrizesSection />
+      <PartnersSection />
+      <InstructorsSection />
+      <FAQSection />
     </PageWithAppbar>
   )
 }
