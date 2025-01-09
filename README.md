@@ -1,92 +1,67 @@
-# Hackathon Starter for Polygon Bounties
+# AgentCamp: Bootcamp de Desarrollo de Agentes IA
 
-Welcome to your hackathon starter template! This project is designed to get you quickly set up for building decentralized applications on the Polygon blockchains and its testnets. It uses **Next.js**, **shadcn/ui**, and **Dynamic** to handle wallet creation and connection, providing you with the essential tools and configurations to kickstart your hackathon project.
+Bienvenido al repositorio oficial de AgentCamp, un programa intensivo de 3 semanas para aprender a desarrollar agentes de IA. Este proyecto utiliza **Next.js**, **shadcn/ui**, y otras tecnologías modernas para crear una experiencia de aprendizaje interactiva.
 
-## Features
+## Acerca del Programa
 
-- **Next.js** with App Router for optimal structure and routing.
-- **Shadcn** for beautiful, reusable UI components.
-- **Bun** runtime for faster builds and improved performance.
-- Pre-configured for **Dynamic Wallet** (powered by [dynamic.xyz](https://dynamic.xyz)) to handle wallet creation and connection.
-- Ready-to-deploy starter that integrates well with Polygon and its testnets.
+- **Bootcamp Intensivo** de 3 semanas enfocado en el desarrollo de agentes IA
+- **Dos Tracks** disponibles: Experiencia Completa y AI Buildathon Abierto
+- **Instructores Expertos** en IA, blockchain y desarrollo de agentes
+- **Curriculum Estructurado** que cubre fundamentos, desarrollo y monetización
+- **Preparación** para hackathons y eventos de la industria
 
-## Getting Started
+## Estructura del Programa
 
-### Prerequisites
+### Semana 1: Ideathon
+- Fundamentos de LLMs y arquitecturas
+- Ecosistema de herramientas IA y Agentes
+- Frameworks para desarrollo
+- Desarrollo de idea de proyecto
 
-- [Node.js](https://nodejs.org/) (Ensure Bun is installed as your runtime)
-- [Bun](https://bun.sh/docs/installation)
+### Semana 2: Agentnomics
+- Eliza - cómo funciona
+- Creación de Agentes
+- Integraciones y APIs
+- Tokenomics y modelos de negocio
+
+### Semana 3: Buildathon
+- Desarrollo avanzado de plugins
+- Integración blockchain
+- Optimización y escalabilidad
+- Demo Day y presentaciones
+
+## Tecnologías Utilizadas
+
+- **Next.js 14** con App Router para estructura óptima
+- **Shadcn/UI** para componentes de interfaz consistentes
+- **TailwindCSS** para estilos responsivos
+- **TypeScript** para desarrollo robusto y tipado
+
+## Configuración del Proyecto
+
+### Requisitos Previos
+
+- [Node.js](https://nodejs.org/) (v18 o superior)
 - [Git](https://git-scm.com/)
-- [Polygon](https://polygon.technology/) native token POL (Amoy testnet recommended)
 
-### Installation
+### Instalación
 
-1. **Clone the repository:**
-
+1. **Clonar el repositorio:**
    ```bash
-   git clone https://github.com/Dablclub/polygon-hackathon-starter.git
-   cd polygon-hackathon-starter
+   git clone https://github.com/cryptoconexion/agentcamp.git
+   cd agentcamp
    ```
 
-2. **Install dependencies using Bun:**
-
+2. **Instalar dependencias:**
    ```bash
-   bun install
+   npm install
    ```
 
-3. **Set up environment variables:**
-
-   Create a `.env` file in the root of your project and add the following variables:
-
-   ```plaintext
-   NEXT_PUBLIC_DYNAMIC_API_KEY=your_dynamic_api_key
-   NEXT_PUBLIC_POLYGON_RPC_URL=https://polygon-rpc-url
+3. **Iniciar el servidor de desarrollo:**
+   ```bash
+   npm run dev
    ```
 
-   Replace `your_dynamic_api_key` with your API key from [dynamic.xyz](https://dynamic.xyz) and `https://polygon-rpc-url` with your preferred Polygon RPC endpoint.
+El sitio estará disponible en `http://localhost:3000`.
 
-### Running the Project
-
-To start the development server, run:
-
-```bash
-bun run dev
-```
-
-This will launch the app at `http://localhost:3000`.
-
-### Build and Production
-
-For production builds, use:
-
-```bash
-bun run build
-bun run start
-```
-
-## Project Structure
-
-```plaintext
-.
-├── public/          # Static assets
-├── src/app/         # Next.js pages and routing
-├── src/components/  # Custom React components
-├── src/styles/      # Global stylesheets
-├── .env             # Environment variables
-├── ...              # Other config files, check the repo!
-```
-
-## Wallet Integration
-
-The starter template includes integration with **Dynamic Wallet**, allowing seamless wallet creation and connection for users:
-
-- **Dynamic.xyz** provides an easy-to-use wallet connection UI.
-- Plug-and-play configuration for connecting to Polygon and other EVM-compatible chains.
-
-## Contributing
-
-We welcome contributions! Feel free to submit issues or pull requests to help improve this starter template for the hackathon community.
-
-## License
-
-This project is open-source and available under the [MIT License](LICENSE).
+## Estructura del Proyecto
