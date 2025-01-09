@@ -5,11 +5,12 @@ export function HeroSection() {
   return (
     <Section className="text-center space-y-8">
       <div className="space-y-4">
-        <h1 className="text-4xl md:text-6xl font-bold tracking-tighter">
-          De Cero a Agente en 3 Semanas
+        <h1 className="text-5xl md:text-6xl font-bold tracking-tighter">
+          De Cero a Agente <br />en 3 Semanas
         </h1>
         <p className="text-xl md:text-2xl text-muted-foreground max-w-[42rem] mx-auto">
-          Aprende a construir, entrenar y monetizar agentes de IA en un programa intensivo respaldado por expertos
+          Desde los fundamentos hasta la implementación<br />
+          <span className="text-secondary">Todo lo que necesitas para</span><br /><span className="text-secondary text-2xl font-bold">triunfar en IA</span>
         </p>
       </div>
 
@@ -18,14 +19,10 @@ export function HeroSection() {
           Inscríbete Ahora
         </Button>
       </div>
-
-      <div className="pt-8 space-y-8">
-        <p className="text-muted-foreground">
-          Inicio: 13 de enero 2024 | Cupos limitados
+      <div className="space-y-8">
+        <p className="text-secondary text-xl font-medium">
+          Inicio: 13 de enero 2025 <br /> <span className="text-primary font-bold">Cupos limitados</span>
         </p>
-        <Button size="sm" variant="outline" className="text-base px-8">
-          Conoce el Programa
-        </Button>
       </div>
     </Section>
   )

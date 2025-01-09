@@ -28,16 +28,16 @@ export function ProgramOverviewSection() {
 
   return (
     <Section>
-      <div className="text-center space-y-4 mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold">
-          Dos Tracks, Un Objetivo
+      <div className="text-center space-y-4">
+        <h2 className="text-3xl md:text-4xl font-bold ">
+          Dos Tracks. <span className="text-primary font-bold">Un Objetivo.</span>
         </h2>
         <p className="text-xl text-muted-foreground max-w-[42rem] mx-auto">
           Elige tu camino según tus objetivos y disponibilidad. Ambas modalidades culminan en la presentación final y premiación.
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+      <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto pt-4">
         {tracks.map((track) => (
           <Card key={track.title} className="relative overflow-hidden">
             <CardHeader>

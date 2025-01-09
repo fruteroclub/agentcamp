@@ -1,5 +1,6 @@
 import React, { SVGProps } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const navigation = [
   {
@@ -92,13 +93,25 @@ export default function Footer({
         {!isHomePage && (
           <div className="md:min-w-1/3 flex items-center justify-center gap-x-3 md:order-1">
             <div className="flex items-center gap-x-1">
-              <Image
-                src="/images/logos/frutero-club-logo-color.png"
-                alt="Frutero Club logo"
-                width={512}
-                height={512}
-                className="w-20 transition duration-300 ease-in-out hover:scale-110"
-              />
+              <Link href="https://frutero.club" target="_blank" rel="noopener noreferrer">
+                <Image
+                  src="/images/logos/frutero-club-logo-color.png"
+                  alt="Frutero Club logo"
+                  width={512}
+                  height={512}
+                  className="w-20 transition duration-300 ease-in-out hover:scale-110"
+                /></Link>
+            </div>
+
+            <div className="flex items-center gap-x-1">
+              <Link href="https://cryptoconexion.com" target="_blank" rel="noopener noreferrer">
+                <Image
+                  src="/images/logos/cryptoconexion-logo-color.png"
+                  alt="CryptoConexión logo"
+                  width={512}
+                  height={512}
+                  className="w-20 transition duration-300 ease-in-out hover:scale-110"
+                /></Link>
             </div>
 
             <p className="text-center text-lg leading-5 text-foreground">

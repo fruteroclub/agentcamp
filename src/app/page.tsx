@@ -11,14 +11,15 @@ import PageWithAppbar from "@/components/layout/pageWithAppbar"
 export default function Home() {
   return (
     <PageWithAppbar>
-      <HeroSection />
-      <ProgramOverviewSection />
-      <CurriculumSection />
-      <BenefitsSection />
-      <PrizesSection />
-      <PartnersSection />
-      <InstructorsSection />
-      <FAQSection />
+      <div className="page pt-16 md:pt-24">
+        <HeroSection />
+        <ProgramOverviewSection />
+        <CurriculumSection />
+        <BenefitsSection />
+        <PrizesSection />
+        <PartnersSection />
+        <InstructorsSection />
+        <FAQSection /></div>
     </PageWithAppbar>
   )
 }

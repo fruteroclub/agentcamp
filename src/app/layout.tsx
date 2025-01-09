@@ -13,8 +13,8 @@ const fontSans = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Hackathon Starter por Frutero Club',
-  description: 'Construye tu proyecto rápido y fácil con Frutero Club',
+  title: 'agentcamp',
+  description: 'De cero a Agente en 3 semanas',
   icons: [{ rel: 'icon', url: '/favicon.ico' }],
 }
 

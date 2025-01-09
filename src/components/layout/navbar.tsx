@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 
 import MobileMenu from './mobileMenu'
@@ -21,7 +22,8 @@ const MENU_ITEMS: MenuItemType[] = [
   },
   {
     displayText: 'recursos',
-    href: '/recursos',
+    href: 'https://cryptoconexion.com/category/inteligencia-artificial/',
+    isExternal: true,
     isMobileOnly: false,
   },
   { displayText: 'faq', href: '/#faq', isMobileOnly: false },
@@ -36,7 +38,13 @@ export default function Navbar() {
       <div className="mx-auto flex h-full w-full max-w-3xl items-center justify-between px-4 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-5 lg:px-8">
         <div className="lg:col-span-1">
           <Link className="flex items-center text-3xl" href="/">
-            <span className="text-3xl transition duration-300 ease-in-out hover:scale-125">🤖</span>
+            <Image
+              src="/images/logos/agentcamp-connie-logo.png"
+              alt="Connie: el agente de agentcamp"
+              width={128}
+              height={128}
+              className="w-10 transition duration-300 ease-in-out hover:scale-110"
+            />
             <span className="sr-only">Agentcamp</span>
           </Link>
         </div>
