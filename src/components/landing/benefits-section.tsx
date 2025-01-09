@@ -9,7 +9,7 @@ export function BenefitsSection() {
     },
     {
       title: "Recursos Premium",
-      description: "Acceso a herramientas, APIs y créditos valorados en más de $5,000 USD"
+      description: "Acceso a herramientas y material educativo exclusivoo"
     },
     {
       title: "Comunidad Activa",
@@ -25,7 +25,7 @@ export function BenefitsSection() {
     },
     {
       title: "Premios",
-      description: "Compite por más de $10,000 USD en premios"
+      description: "Compite por más de $1,000 USD en premios"
     }
   ]
 
@@ -40,7 +40,7 @@ export function BenefitsSection() {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-6">
         {benefits.map((benefit) => (
           <div key={benefit.title} className="flex gap-4">
             <CheckCircle className="h-6 w-6 text-primary flex-shrink-0" />

@@ -5,19 +5,19 @@ import { Section } from "../layout/section"
 export function PrizesSection() {
   const prizes = [
     {
-      title: "Primer Lugar",
-      prize: "$5,000 USD",
-      perks: ["Mentoría VIP", "Acceso a inversores", "Créditos en la nube"]
+      title: "Dabl Club Track",
+      prize: "$500 USD",
+      perks: ["Track técnico", "Integración Polygon", "Creación de Agente con cualquier Framework"]
     },
     {
-      title: "Segundo Lugar",
-      prize: "$3,000 USD",
-      perks: ["Mentoría", "Créditos en la nube"]
+      title: "Frutero Club Track",
+      prize: "$500 USD",
+      perks: ["Track técnico", "Creación de Agente con Eliza", "Herramientas IA Comunitarias"]
     },
     {
-      title: "Tercer Lugar",
-      prize: "$2,000 USD",
-      perks: ["Créditos en la nube"]
+      title: "AI Tools Track",
+      prize: "$250 USD",
+      perks: ["Track abierto", "Desarrollo de Asistentes IA (ChatGPT/Claude)", "Ejecución de Tareas con IA"]
     }
   ]
 
@@ -28,7 +28,7 @@ export function PrizesSection() {
           Premios y Reconocimientos
         </h2>
         <p className="text-xl text-muted-foreground">
-          Más de $10,000 USD en premios
+          Más de $1,000 USD en premios
         </p>
       </div>
 

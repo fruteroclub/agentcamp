@@ -4,30 +4,30 @@ import { Section } from "../layout/section"
 export function CurriculumSection() {
   const weeks = [
     {
-      title: "Semana 1: IDEATHON",
+      title: "Semana 1: Ideathon",
       subtitle: "Fundamentos y Herramientas",
       topics: [
         "Fundamentos de LLMs y arquitecturas",
-        "Ecosistema de herramientas IA",
+        "Ecosistema de herramientas IA y Agentes",
         "Frameworks para desarrollo",
-        "Workshop de ideación"
+        "Desarrollo de idea de proyecto"
       ]
     },
     {
-      title: "Semana 2: AGENTNOMICS",
+      title: "Semana 2: Agentnomics",
       subtitle: "Desarrollo y Monetización",
       topics: [
-        "Desarrollo con Eliza",
-        "Sistema de plugins",
+        "Eliza - cómo funciona",
+        "Creación de Agentes",
         "Integraciones y APIs",
         "Tokenomics y modelos de negocio"
       ]
     },
     {
-      title: "Semana 3: BUILDATHON",
+      title: "Semana 3: Buildathon",
       subtitle: "Proyecto Final",
       topics: [
-        "Desarrollo avanzado",
+        "Desarrollo avanzado de plugins",
         "Integración blockchain",
         "Optimización y escalabilidad",
         "Demo Day y presentaciones"
@@ -52,7 +52,7 @@ export function CurriculumSection() {
             <CardContent className="pt-6">
               <div className="text-center mb-6">
                 <h3 className="text-2xl font-bold">{week.title}</h3>
-                <p className="text-primary">{week.subtitle}</p>
+                <p className="text-primary text-lg font-medium">{week.subtitle}</p>
               </div>
               <ul className="space-y-3">
                 {week.topics.map((topic) => (
